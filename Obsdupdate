@@ -1,0 +1,11 @@
+##########################################################
+###   OpenBSD Full System Update
+##########################################################
+#!/bin/bash
+#
+#
+syspatch
+fw_update
+pkg_add -Uuv
+pkg_delete -a
+exit 0
